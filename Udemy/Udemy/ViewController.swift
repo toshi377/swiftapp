@@ -17,9 +17,13 @@ class ViewController: UIViewController {
     
     @IBAction func theButton(_ sender: Any) {
         
+        let addition = false
         
-        coolLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
-        
+        if addition {
+            coolLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        }else{
+            coolLabel.text = "Answer: \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
     }
     
     
@@ -27,12 +31,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
