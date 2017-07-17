@@ -16,8 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func theButton(_ sender: Any) {
-        print(text1.text!)
-        print(text2.text!)
+        
+        
+        coolLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        
     }
     
     
